@@ -83,3 +83,27 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
+
+.errorMessage {
+    color: #f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.previewImage,
+.previewVideo {
+    width: 100%;
+}
+
+.previewContainer {
+    position: relative;
+    display: flex;
+}
+
+.previewOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
