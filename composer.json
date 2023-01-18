@@ -1,0 +1,15 @@
+{
+    "name": "joao/sandbox",
+    "autoload": {
+        "psr-4": {
+            "Joao\\Sandbox\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JoaoGuerra23",
+            "email": "joao_guerra23@hotmail.com"
+        }
+    ],
+    "require": {}
+}
