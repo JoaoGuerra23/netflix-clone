@@ -11,15 +11,12 @@
       "email": "joao_guerra23@hotmail.com"
     }
   ],
-  "require-dev": {
+  "require": {
     "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
   },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true
     }
-  },
-  "require-dev": {
-    "inpsyde/php-coding-standards": "^1.0"
   }
 }
