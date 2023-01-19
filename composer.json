@@ -1,22 +1,25 @@
 {
-    "name": "joao/sandbox",
-    "autoload": {
-        "psr-4": {
-            "Joao\\Sandbox\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "JoaoGuerra23",
-            "email": "joao_guerra23@hotmail.com"
-        }
-    ],
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
-    },
-    "require-dev": {
-        "inpsyde/php-coding-standards": "^1.0"
+  "name": "joao/sandbox",
+  "autoload": {
+    "psr-4": {
+      "Joao\\Sandbox\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "JoaoGuerra23",
+      "email": "joao_guerra23@hotmail.com"
+    }
+  ],
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "inpsyde/php-coding-standards": "^1.0"
+  }
 }
