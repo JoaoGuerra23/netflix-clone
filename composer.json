@@ -12,5 +12,12 @@
             "name": "JoaoGuerra23"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
