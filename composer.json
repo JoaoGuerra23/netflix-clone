@@ -1,7 +1,5 @@
 {
     "name": "joao/sandbox",
-    "description": "PHP Netflix Clone Project",
-    "type": "project",
     "autoload": {
         "psr-4": {
             "Joao\\Sandbox\\": "src/"
@@ -9,15 +7,16 @@
     },
     "authors": [
         {
-            "name": "JoaoGuerra23"
+            "name": "JoaoGuerra23",
+            "email": "joao_guerra23@hotmail.com"
         }
     ],
-    "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
-    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "require-dev": {
+        "inpsyde/php-coding-standards": "^1.0"
     }
 }
