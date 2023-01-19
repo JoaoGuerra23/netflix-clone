@@ -1,5 +1,7 @@
 {
     "name": "joao/sandbox",
+    "description": "PHP Netflix Clone Project",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "Joao\\Sandbox\\": "src/"
@@ -7,8 +9,7 @@
     },
     "authors": [
         {
-            "name": "JoaoGuerra23",
-            "email": "joao_guerra23@hotmail.com"
+            "name": "JoaoGuerra23"
         }
     ],
     "require": {}
