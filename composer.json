@@ -2,7 +2,7 @@
   "name": "joao/sandbox",
   "autoload": {
     "psr-4": {
-      "Joao\\Sandbox\\": "src/"
+      "Joao\\Sandbox\\": "public/"
     }
   },
   "authors": [
@@ -18,5 +18,20 @@
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true
     }
+  },
+  "scripts": {
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "phpcbf-dev": "\"vendor/bin/phpcbf\"",
+    "run-phpcbf": [
+      "@phpcbf-dev"
+    ],
+    "phpcs-dev": "\"vendor/bin/phpcs\"",
+    "run-phpcs": [
+      "@phpcs-dev"
+    ],
+    "phpunit-dev": "\"vendor/bin/phpunit\"",
+    "phpunit-integration-dev": "\"vendor/bin/phpunit\" -c \"phpunit.integration.xml.dist\""
   }
 }
