@@ -1,12 +1,6 @@
 {
     "name": "joao/sandbox",
     "type": "project",
-    "require": {
-        "squizlabs/php_codesniffer": "^3.7"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.7"
-    },
     "autoload": {
         "psr-4": {
             "Joao\\Sandbox\\": "public/"
@@ -22,5 +16,8 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "require": {
+        "squizlabs/php_codesniffer": "*"
     }
 }
