@@ -1,37 +1,26 @@
 {
-  "name": "joao/sandbox",
-  "autoload": {
-    "psr-4": {
-      "Joao\\Sandbox\\": "public/"
-    }
-  },
-  "authors": [
-    {
-      "name": "JoaoGuerra23",
-      "email": "joao_guerra23@hotmail.com"
-    }
-  ],
-  "require": {
-    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
-  },
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
-  },
-  "scripts": {
-    "install-codestandards": [
-      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    "name": "joao/sandbox",
+    "type": "project",
+    "require": {
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Joao\\Sandbox\\": "public/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JoaoGuerra23",
+            "email": "joao_guerra23@hotmail.com"
+        }
     ],
-    "phpcbf-dev": "\"vendor/bin/phpcbf\"",
-    "run-phpcbf": [
-      "@phpcbf-dev"
-    ],
-    "phpcs-dev": "\"vendor/bin/phpcs\"",
-    "run-phpcs": [
-      "@phpcs-dev"
-    ],
-    "phpunit-dev": "\"vendor/bin/phpunit\"",
-    "phpunit-integration-dev": "\"vendor/bin/phpunit\" -c \"phpunit.integration.xml.dist\""
-  }
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
