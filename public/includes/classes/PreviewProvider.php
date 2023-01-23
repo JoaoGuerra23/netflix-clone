@@ -23,6 +23,8 @@ class PreviewProvider
         $preview = $entity->getPreview();
         $thumbnail = $entity->getThumbnail();
 
+        // TODO: ADD SUBTITLE
+
         return "<div class='previewContainer'>
 
                         <img src='$thumbnail' class='previewImage' hidden>
@@ -32,7 +34,17 @@ class PreviewProvider
                         </video>
                         
                         <div class='previewOverlay'>
-                            HELLO
+                            
+                            <div class='mainDetails'>
+                                <h3>$name</h3>
+                                
+                                <div class='buttons'>
+                                <button><i class='fa-solid fa-play'></i> Play</button>
+                                <button onclick='volumeToggle(this)'><i class='fa-solid fa-volume-xmark'></i></button>
+                                </div>     
+                                                       
+                            </div>
+                            
                         </div>
                         
                 </div>";
