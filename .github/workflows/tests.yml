@@ -31,11 +31,11 @@ jobs:
 
             - name: Coding standards
               if: matrix.analysis
-              run: ./vendor/bin/phpcs
+              run: ./vendor/bin/phpcs public/
 
             - name: Static analysis
               if: matrix.analysis
-              run: ./vendor/bin/phpstan
+              run: ./vendor/bin/phpstan public/
 
             - name: Tests
               run: vendor/bin/phpunit --coverage-clover clover.xml
