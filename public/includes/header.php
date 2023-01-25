@@ -1,7 +1,9 @@
 <?php
-require_once("config.php");
-require_once("classes/PreviewProvider.php");
-require_once("classes/Entity.php");
+require_once "config.php";
+require_once "classes/PreviewProvider.php";
+require_once "classes/CategoryContainers.php";
+require_once "classes/Entity.php";
+require_once "classes/EntityProvider.php";
 
 if (isset($_SESSION["userLoggedIn"])) {
     header("Location: register.php");
