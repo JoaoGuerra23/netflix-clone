@@ -8,7 +8,7 @@ class EntityProvider
 
 
         if ($categoryId != null) {
-            $sql .= "WHERE categoryID=:categoryId";
+            $sql .= "WHERE categoryID=:categoryId ";
         }
 
         $sql .= "ORDER BY RAND() LIMIT :limit";
@@ -19,7 +19,7 @@ class EntityProvider
             $query->bindValue(":categoryId", $categoryId);
         }
 
-        $query->bindValue(":limit", $limit, PDO::PARAM_INT);
+        $query->bindValue(":limit", $limit, \PDO::PARAM_INT);
         $query->execute();
 
         $result = array();
